@@ -1,0 +1,29 @@
+output   {
+    font-family: 'Architects Daughter', cursive;
+}
+
+header  {
+    background-color: rgb(189, 203, 216);
+    color:rgb(13, 42, 66);
+    font-size: 20px;
+    border: 2px solid #c96c0a;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+body > header > a:nth-child(2), body > header > a:nth-child(3), body > header > a:nth-child(4)  {
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+body > menu {
+   
+
+}
+
+footer  {
+
+    background-color: rgb(189, 203, 216);
+    color:rgb(13, 42, 66);
+}
