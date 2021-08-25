@@ -1,4 +1,4 @@
-output   {
+*   {
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -18,12 +18,12 @@ body > header > a:nth-child(2), body > header > a:nth-child(3), body > header > 
 }
 
 body > menu {
-   
+    font-size: 25px;
 
 }
 
 footer  {
-
+    font-size: 25px;
     background-color: rgb(189, 203, 216);
     color:rgb(13, 42, 66);
 }
