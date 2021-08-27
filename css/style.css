@@ -1,29 +1,36 @@
 *   {
     font-family: 'Architects Daughter', cursive;
+    background-color: rgb(189, 203, 216);
 }
 
 header  {
-    background-color: rgb(189, 203, 216);
-    color:rgb(13, 42, 66);
+    background-color: black;
+    color:rgb(235, 235, 235);
     font-size: 20px;
-    border: 2px solid #c96c0a;
-    border-radius: 50px;
+    border: 2px solid #911212;
     padding-left: 20px;
     padding-bottom: 40px;
 }
 
-body > header > a:nth-child(2), body > header > a:nth-child(3), body > header > a:nth-child(4)  {
+.boton  {
+    color:rgb(214, 55, 55);
+    background-color: black;
     padding-left: 25px;
-    font-weight: bold;
 }
 
 body > menu {
     font-size: 25px;
+}
 
+.receta, body > ol > li {
+    background-image: url(../images/paper-texture.jpg);
+    text-align: justify;
+    font-size: 20px;
 }
 
 footer  {
-    font-size: 25px;
-    background-color: rgb(189, 203, 216);
-    color:rgb(13, 42, 66);
+    font-size: 15px;
+    background-color: black;
+    color:rgb(235, 235, 235);
+    border: 2px solid #911212;
 }
