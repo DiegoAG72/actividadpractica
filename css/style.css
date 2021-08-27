@@ -18,6 +18,11 @@ header  {
     padding-left: 25px;
 }
 
+.bot_b {
+    color:rgb(16, 81, 90);
+
+}
+
 body > menu {
     font-size: 25px;
 }
@@ -26,6 +31,9 @@ body > menu {
     background-image: url(../images/paper-texture.jpg);
     text-align: justify;
     font-size: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 15px;
 }
 
 footer  {
@@ -33,4 +41,8 @@ footer  {
     background-color: black;
     color:rgb(235, 235, 235);
     border: 2px solid #911212;
+}
+
+.mapa {
+    border:5px solid black;
 }
