@@ -44,5 +44,5 @@ footer  {
 }
 
 .mapa {
-    border:5px solid black;
+    border-style: groove;
 }
