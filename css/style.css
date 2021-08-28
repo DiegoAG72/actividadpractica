@@ -16,11 +16,12 @@ header  {
     color:rgb(214, 55, 55);
     background-color: black;
     padding-left: 25px;
+    text-decoration: none;
 }
 
 .bot_b {
     color:rgb(16, 81, 90);
-
+    text-decoration: none;
 }
 
 body > menu, body > table {
