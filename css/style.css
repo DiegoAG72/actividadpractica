@@ -23,8 +23,14 @@ header  {
 
 }
 
-body > menu {
+body > menu, body > table {
     font-size: 25px;
+}
+
+img, table  {
+    padding-left: 150px;
+    padding-top: 20px;
+
 }
 
 .receta, body > ol > li {
