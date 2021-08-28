@@ -32,7 +32,6 @@ body > menu, body > table {
 img, table  {
     padding-left: 150px;
     padding-top: 20px;
-
 }
 
 .receta, body > ol > li {
@@ -46,9 +45,10 @@ img, table  {
 
 footer  {
     font-size: 15px;
-    background-color: black;
+    background-color: black; 
     color:rgb(235, 235, 235);
     border: 2px solid #911212;
+    text-align: center;
 }
 
 .mapa {
@@ -57,4 +57,10 @@ footer  {
 
 menu    {
     text-align: center;
+}
+
+body > footer > i {
+    font-size: 20px;
+    color: grey;
+    background-color: black;
 }
