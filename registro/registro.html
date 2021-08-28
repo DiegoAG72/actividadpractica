@@ -21,11 +21,49 @@
         <h1 style="text-align: center; background-color: black;">Registro</h1>
         <br>
     </header>
-
     <menu>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <form action="\datos\datos.html" target="_blank">
+            <fieldset>
+                <legend><strong>Datos Personales</strong></legend>
+                <label for="nombre">Nombre: </label>
+                <input class="inputstyle" type="text" size="30" name="nombre" placeholder="Ingrese aquí su nombre...">
+                <label for="apellido">Apellido: </label>
+                <input class="inputstyle" type="text" size="40" name="apellido" placeholder="Ingrese aquí su apellido..."><br><br>
+                <label for="domicio">Domicilio: </label>
+                <input class="inputstyle" type="text" size="50" name="domicilio" placeholder="Ingrese aquí su domicilio...">
+                <label for="localidad">Localidad: </label>
+                <input class="inputstyle" type="text" size="50" name="localidad" placeholder="Ingrese aquí su localidad..."><br><br>
+                <label for="dni">D.N.I.: </label>
+                <input class="inputstyle" type="number" size="30" name="DNI" placeholder="Ingrese aquí su D.N.I...">
+                <label for="date">Fecha de nacimiento: </label>
+                <input class="inputstyle" type="date" name="nacim"><br>
+                <p>
+                    <input type="radio" name="genero" value="hombre">Hombre
+                    <input type="radio" name="genero" value="Mujer">Mujer
+                    <input type="radio" name="genero" value="Otro"> Otro
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Datos de Contacto</strong></legend><br>
+                <label for="telef">Teléfono: </label>
+                <input class="inputstyle" type="tel" size="30" name="telef" placeholder="Ingrese aquí su teléfono..."><br><br>
+                <label for="mail">Email: </label>
+                <input class="inputstyle" type="email" size="30" name="mail" placeholder="Ingrese aquí su email..."><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Datos Login</strong></legend><br>
+                <label for="user">Nombre de Usuario: </label>
+                <input class="inputstyle" type="text" size="30" name="user" placeholder="Ingrese aquí su usuario..."><br><br>
+                <label for="pass">Contraseña: </label>
+                <input class="inputstyle" type="password" size="30" name="pass"><br><br>
+            </fieldset><br>
 
+            <input class="submitstyle" type="submit" value="Enviar">
+            <button class="submitstyle" type="reset">Reset</button>
+
+        </form>
     </menu>
+
 
     <footer>
         <br><i class="fab fa-facebook"></i>
