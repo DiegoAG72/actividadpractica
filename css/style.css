@@ -22,6 +22,7 @@ header  {
 .bot_b {
     color:rgb(16, 81, 90);
     text-decoration: none;
+    font-size: 30px;
 }
 
 body > menu, body > table {
@@ -56,5 +57,4 @@ footer  {
 
 menu    {
     text-align: center;
-    font-size: 25px;
 }
