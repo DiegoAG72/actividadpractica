@@ -91,5 +91,9 @@ body > menu > form {
     font-size: 20pt;
     background-color: rgb(56, 21, 21);
     color:rgb(177, 179, 177);
-    border-style:groove;
+    border-style: groove;
+}
+
+@keyframes efecto {
+
 }
