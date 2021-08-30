@@ -15,9 +15,15 @@ header  {
 .boton  {
     color:rgb(214, 55, 55);
     background-color: black;
-    padding-left: 25px;
+    padding: 5px;
     text-decoration: none;
     font-size: 25px;
+    transition-duration: 0.5s;
+}
+
+.boton:hover{
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
 }
 
 .bot_b {
