@@ -105,7 +105,7 @@ body > menu > form {
     font-size: 20pt;
     background-color: rgb(102, 102, 102);
     color:rgb(177, 179, 177);
-    border-style: outset;
+    border-style: solid;
     animation-name: efecto1;
     animation-duration: 1.5s;
     animation-delay: 0.5s;
@@ -125,13 +125,14 @@ body > menu > form {
     font-size: 20pt;
     background-color: rgb(102, 102, 102);
     color:rgb(177, 179, 177);
-    border-style: outset;
+    border-style: solid ;
     animation-name: efecto2;
     animation-duration: 1.5s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
     margin: 20px;
     cursor: pointer;
+    border-radius: 8px;
     }
 
 .resetstyle:hover  {
