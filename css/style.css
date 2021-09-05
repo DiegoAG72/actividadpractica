@@ -4,12 +4,21 @@
 }
 
 header  {
+    width: 100%;
     background-color: black;
     color:rgb(235, 235, 235);
     font-size: 20px;
     border: 2px solid #911212;
-    padding-left: 20px;
     padding-bottom: 40px;
+}
+
+header > a  {
+    margin-left: 15px;
+}
+
+header > h1 {
+    text-align: center;
+    background-color: black;
 }
 
 .boton  {
@@ -21,7 +30,7 @@ header  {
     transition-duration: 0.5s;
 }
 
-.boton:hover{
+.boton:hover, body > footer > a > i:hover    {
     background-color: rgb(68, 68, 68);
     color: rgb(255, 255, 255);
 }
@@ -57,24 +66,27 @@ img, table  {
 }
 
 footer  {
-    font-size: 15px;
+    width: 100%;
+    font-size: 18px;
     background-color: black; 
     color:rgb(235, 235, 235);
     border: 2px solid #911212;
     text-align: center;
 }
+
+body > footer > i, body > footer > a, body > footer > a > i {
+    font-size: 1.4vw;
+    color: rgb(214, 55, 55);
+    background-color: black;
+    padding: 5px;
+}
+
 iframe   {
     border: 2px solid #911212;
-
 }
+
 menu    {
     text-align: center;
-}
-
-body > footer > i {
-    font-size: 20px;
-    color: grey;
-    background-color: black;
 }
 
 body > menu > form {
@@ -87,13 +99,68 @@ body > menu > form {
 }    
 
 .submitstyle    {
+    width: 35%;
+    border-color: rgb(87, 87, 87);
+    border-width: 5px;
     font-size: 20pt;
-    background-color: rgb(56, 21, 21);
+    background-color: rgb(102, 102, 102);
     color:rgb(177, 179, 177);
-    border-style: groove;
+    border-style: outset;
+    animation-name: efecto1;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    margin: 20px;
+    cursor: pointer;
 }
 
-@keyframes efecto {
-
+.submitstyle:hover  {
+    transform:scale(1.5, 1.5);
 }
 
+.resetstyle    {
+    width: 20%;
+    border-color: rgb(87, 87, 87);
+    border-width: 5px;
+    font-size: 20pt;
+    background-color: rgb(102, 102, 102);
+    color:rgb(177, 179, 177);
+    border-style: outset;
+    animation-name: efecto2;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    margin: 20px;
+    cursor: pointer;
+    }
+
+.resetstyle:hover  {
+        transform:scale(1.5, 1.5);
+}
+
+@keyframes efecto1 {
+    from { border-color: rgb(0, 104, 40); }
+    to { border-color: rgb(87, 87, 87); }
+    }
+
+@keyframes efecto2 {
+        from { border-color: rgb(126, 5, 5); }
+        to { border-color: rgb(87, 87, 87); }
+    }
+
+body > menu > form  {
+        margin: 50px 200px 50px 200px;
+}
+
+.animate__animated.animate__flipInX  {
+    --animate-delay: 2s;
+    --animate-duration: 3s;
+}
+
+input   {
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    border: 1vw;
+    padding: 0.5vw;
+}
