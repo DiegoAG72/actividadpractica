@@ -3,20 +3,7 @@
     background-color: rgb(189, 203, 216);
 }
 
-header  {
-    width: 100%;
-    background-color: black;
-    color:rgb(235, 235, 235);
-    font-size: 20px;
-    border: 2px solid #911212;
-    padding-bottom: 40px;
-}
-
-header > a  {
-    margin-left: 15px;
-}
-
-header > h1 {
+div > h1 {
     text-align: center;
     background-color: black;
 }
@@ -24,13 +11,14 @@ header > h1 {
 .boton  {
     color:rgb(214, 55, 55);
     background-color: black;
+    margin-left: 15px;
     padding: 5px;
     text-decoration: none;
     font-size: 25px;
     transition-duration: 0.5s;
 }
 
-.boton:hover, body > footer > a > i:hover    {
+.boton:hover, body > div > div.c > a > i:hover    {
     background-color: rgb(68, 68, 68);
     color: rgb(255, 255, 255);
 }
@@ -47,7 +35,7 @@ header > h1 {
       border: 1px solid rgb(16, 81, 90);
 }
 
-body > menu, body > table {
+body > table {
     font-size: 25px;
 }
 
@@ -65,16 +53,7 @@ img, table  {
     padding-right: 15px;
 }
 
-footer  {
-    width: 100%;
-    font-size: 18px;
-    background-color: black; 
-    color:rgb(235, 235, 235);
-    border: 2px solid #911212;
-    text-align: center;
-}
-
-body > footer > i, body > footer > a, body > footer > a > i {
+body > div > div.c > i, body > div > div.c > a, body >div > div.c > a > i {
     font-size: 1.4vw;
     color: rgb(214, 55, 55);
     background-color: black;
@@ -83,10 +62,6 @@ body > footer > i, body > footer > a, body > footer > a > i {
 
 iframe   {
     border: 2px solid #911212;
-}
-
-menu    {
-    text-align: center;
 }
 
 body > menu > form {
@@ -104,7 +79,7 @@ body > menu > form {
     border-width: 5px;
     font-size: 20pt;
     background-color: rgb(102, 102, 102);
-    color:rgb(177, 179, 177);
+    color:white;
     border-style: solid;
     animation-name: efecto1;
     animation-duration: 1.5s;
@@ -124,7 +99,7 @@ body > menu > form {
     border-width: 5px;
     font-size: 20pt;
     background-color: rgb(102, 102, 102);
-    color:rgb(177, 179, 177);
+    color:white;
     border-style: solid ;
     animation-name: efecto2;
     animation-duration: 1.5s;
@@ -165,3 +140,49 @@ input   {
     border: 1vw;
     padding: 0.5vw;
 }
+
+.grid {
+    display: grid;
+    grid-template-areas: "head head head"
+                         "main main main"
+                         "foot foot foot";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    }
+  
+    .a { 
+        grid-area: head;
+        background-color: black;
+        color:rgb(235, 235, 235);
+        font-size: 20px;
+        border: 2px solid #911212;
+        padding-bottom: 40px;
+    }
+
+    .b {
+        grid-area: main;
+        grid-auto-flow: row;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .c { 
+        grid-area: foot;
+        width: 100%;
+        font-size: 18px;
+        background-color: black; 
+        color:rgb(235, 235, 235);
+        border: 2px solid #911212;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+      }
+
+    .item {
+        grid-area: head;
+        width: 100%;
+        text-align: center;
+    }
