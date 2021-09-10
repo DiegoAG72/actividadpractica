@@ -3,7 +3,7 @@
     background-color: rgb(189, 203, 216);
 }
 
-div > h1 {
+body > div > div.foot > h3, body > div > div.head > h1 {
     text-align: center;
     background-color: black;
 }
@@ -39,7 +39,7 @@ body > table {
     font-size: 25px;
 }
 
-img, table  {
+table  {
     padding-left: 150px;
     padding-top: 20px;
 }
@@ -48,9 +48,7 @@ img, table  {
     background-image: url(../images/paper-texture.jpg);
     text-align: justify;
     font-size: 20px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 15px;
+    padding: 20px 15px 0px 35px;
 }
 
 body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
@@ -173,7 +171,7 @@ input   {
         grid-auto-flow: row;
         text-align: center;
         font-size: 25px;
-    }
+     }
     
     .main3 {
         grid-area: main3;
@@ -189,16 +187,5 @@ input   {
         background-color: black; 
         color:rgb(235, 235, 235);
         border: 2px solid #911212;
-        text-align: center;
-    }
-
-    .flex {
-        display: flex;
-        justify-content: space-around;
-      }
-
-    .item {
-        grid-area: head;
-        width: 100%;
-        text-align: center;
+        text-align:center;
     }
