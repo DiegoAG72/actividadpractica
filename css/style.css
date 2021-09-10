@@ -18,7 +18,7 @@ div > h1 {
     transition-duration: 0.5s;
 }
 
-.boton:hover, body > div > div.c > a > i:hover    {
+.boton:hover, body > div > div.foot > a > i:hover    {
     background-color: rgb(68, 68, 68);
     color: rgb(255, 255, 255);
 }
@@ -53,7 +53,7 @@ img, table  {
     padding-right: 15px;
 }
 
-body > div > div.c > i, body > div > div.c > a, body >div > div.c > a > i {
+body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
     font-size: 1.4vw;
     color: rgb(214, 55, 55);
     background-color: black;
@@ -143,14 +143,16 @@ input   {
 
 .grid {
     display: grid;
-    grid-template-areas: "head head head"
-                         "main main main"
-                         "foot foot foot";
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    }
+    grid-template-areas: "head head head"
+                         "main1 main2 main3"
+                         "foot foot foot";
+    grid-gap: 0.2rem;
+}
   
-    .a { 
+    .head { 
         grid-area: head;
         background-color: black;
         color:rgb(235, 235, 235);
@@ -159,14 +161,28 @@ input   {
         padding-bottom: 40px;
     }
 
-    .b {
-        grid-area: main;
+    .main1 {
+        grid-area: main1;
+        grid-auto-flow: row;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .main2 {
+        grid-area: main2;
+        grid-auto-flow: row;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .main3 {
+        grid-area: main3;
         grid-auto-flow: row;
         text-align: center;
         font-size: 25px;
     }
 
-    .c { 
+    .foot { 
         grid-area: foot;
         width: 100%;
         font-size: 18px;
