@@ -3,18 +3,29 @@
     background-color: rgb(189, 203, 216);
 }
 
-body > div > div.foot > h3, body > div > div.head > h1 {
-    text-align: center;
+body > div > div.head > h1 {
     background-color: black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+body > div > div.main2 > h2 {
+    font-size: 2.2rem;
+}
+
+body > div > div.foot > h3 {
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .boton  {
     color:rgb(214, 55, 55);
     background-color: black;
-    margin-left: 15px;
-    padding: 5px;
+    margin-left: 1rem;
+    padding: 0.02rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     transition-duration: 0.5s;
 }
 
@@ -26,13 +37,14 @@ body > div > div.foot > h3, body > div > div.head > h1 {
 .bot_b {
     color:rgb(16, 81, 90);
     text-decoration: none;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     transition-duration: 0.5s;
 }
 
 .bot_b:hover {
-      border: 1px solid rgb(16, 81, 90);
+      border: 0.1rem solid rgb(16, 81, 90);
+      border-radius: 1rem;
 }
 
 body > table {
@@ -52,10 +64,10 @@ table  {
 }
 
 body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
-    font-size: 1.4vw;
+    font-size: 1.5rem;
     color: rgb(214, 55, 55);
     background-color: black;
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 iframe   {
@@ -154,38 +166,32 @@ input   {
         grid-area: head;
         background-color: black;
         color:rgb(235, 235, 235);
-        font-size: 20px;
-        border: 2px solid #911212;
-        padding-bottom: 40px;
+        border: 0.2rem solid #911212;
     }
 
     .main1 {
         grid-area: main1;
         grid-auto-flow: row;
         text-align: center;
-        font-size: 25px;
     }
     
     .main2 {
         grid-area: main2;
         grid-auto-flow: row;
         text-align: center;
-        font-size: 25px;
      }
     
     .main3 {
         grid-area: main3;
         grid-auto-flow: row;
         text-align: center;
-        font-size: 25px;
     }
 
     .foot { 
         grid-area: foot;
         width: 100%;
-        font-size: 18px;
         background-color: black; 
         color:rgb(235, 235, 235);
-        border: 2px solid #911212;
+        border: 0.2rem solid #911212;
         text-align:center;
     }
