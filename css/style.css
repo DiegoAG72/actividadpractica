@@ -66,11 +66,20 @@ body > div > div.main1 > ul {
     padding: 0.5rem 1rem 0rem 1.8rem;
 }
 
+body > div > div.main2 > div > ul > li   {
+    list-style-type: none;
+    margin-top: 1.2rem;
+    position: relative;
+    left: -5%;
+}
+
 body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
     font-size: 1.5rem;
     color: rgb(214, 55, 55);
     background-color: black;
     padding: 0.5rem;
+    position: relative;
+    top: 2%;
 }
 
 body > div > div.main3 > img    {
@@ -79,7 +88,7 @@ body > div > div.main3 > img    {
 }
 
 iframe   {
-    border: 2px solid #911212;
+    border: 0.1rem solid #911212;
 }
 
 body > menu > form {
