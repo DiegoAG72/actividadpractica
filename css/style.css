@@ -92,8 +92,17 @@ iframe   {
     border: 0.1rem solid #911212;
 }
 
-body > menu > form {
-    font-size: 20px;
+body > div > div.main1 > form {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+body > div > div.main2 > form {
+    font-size: 1.5rem;
+    text-align: left;
+}
+body > div > div.main3 > form {
+    font-size: 1.5rem;
     text-align: left;
 }
 
