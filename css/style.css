@@ -66,11 +66,9 @@ body > div > div.main1 > ul {
     padding: 0.5rem 1rem 0rem 1.8rem;
 }
 
-body > div > div.main2 > div > ul > li   {
+body > div > div.main2 > div > p   {
     list-style-type: none;
     margin-top: 1.2rem;
-    position: relative;
-    left: -5%;
 }
 
 body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
