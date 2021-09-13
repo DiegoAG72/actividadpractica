@@ -66,6 +66,10 @@ body > div > div.main1 > ul {
     padding: 0.5rem 1rem 0rem 1.8rem;
 }
 
+body > div > div.main2 > div > p  {
+    margin-top: 1.5rem;
+}
+
 body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a > i {
     font-size: 1.5rem;
     color: rgb(214, 55, 55);
