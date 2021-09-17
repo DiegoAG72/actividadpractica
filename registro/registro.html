@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,44 +26,91 @@
             <h1>Registro</h1>
         </div>
 
-
-        <div class="main1">
-            <form action="\datos\datos_pers.html" target="_blank">
-                <fieldset>
-                    <legend><strong>Datos Personales</strong></legend>
-                    <p><label for="nombre">Nombre: </label>
-                        <input class="inputstyle" type="text" size="30" name="nombre"
-                            placeholder="Ingrese aquí su nombre...">
-                    </p>
-                    <p><label for="apellido">Apellido: </label>
-                        <input class="inputstyle" type="text" size="40" name="apellido"
-                            placeholder="Ingrese aquí su apellido...">
-                    </p>
-                    <p><label for="domicio">Domicilio: </label>
-                        <input class="inputstyle" type="text" size="50" name="domicilio"
-                            placeholder="Ingrese aquí su domicilio...">
-                    </p>
-                    <p><label for="localidad">Localidad: </label>
-                        <input class="inputstyle" type="text" size="50" name="localidad"
-                            placeholder="Ingrese aquí su localidad...">
-                    </p>
-                    <p><label for="dni">D.N.I.: </label>
-                        <input class="inputstyle" type="number" size="30" name="DNI"
-                            placeholder="Ingrese aquí su D.N.I...">
-                    </p>
-                    <p><label for="date">Fecha de nacimiento: </label>
-                        <input class="inputstyle" type="date" name="nacim">
-                    </p>
-                    <p>
-                        <input type="radio" name="genero" value="hombre">Hombre
-                        <input type="radio" name="genero" value="Mujer">Mujer
-                        <input type="radio" name="genero" value="Otro"> Otro
-                    </p>
-                </fieldset>
-            </form>
-        </div>
-
         <div class="main2">
+            <div class="container">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltipUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <input type="text" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <label for="validationTooltip03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationTooltip03" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip04" class="form-label">State</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationTooltip05" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mb-3">
+                <form action="\datos\datos_pers.html" target="_blank">
+                    <fieldset>
+                        <legend><strong>Datos Personales</strong></legend>
+                </form>
+                <p><label for="nombre">Nombre: </label>
+                    <input class="inputstyle" type="text" size="30" name="nombre"
+                        placeholder="Ingrese aquí su nombre...">
+                </p>
+                <p><label for="apellido">Apellido: </label>
+                    <input class="inputstyle" type="text" size="40" name="apellido"
+                        placeholder="Ingrese aquí su apellido...">
+                </p>
+                <p><label for="domicio">Domicilio: </label>
+                    <input class="inputstyle" type="text" size="50" name="domicilio"
+                        placeholder="Ingrese aquí su domicilio...">
+                </p>
+                <p><label for="localidad">Localidad: </label>
+                    <input class="inputstyle" type="text" size="50" name="localidad"
+                        placeholder="Ingrese aquí su localidad...">
+                </p>
+                <p><label for="dni">D.N.I.: </label>
+                    <input class="inputstyle" type="number" size="30" name="DNI" placeholder="Ingrese aquí su D.N.I...">
+                </p>
+                <p><label for="date">Fecha de nacimiento: </label>
+                    <input class="inputstyle" type="date" name="nacim">
+                </p>
+            </div>
             <form action="\datos\datos_contacto.html" target="_blank">
                 <fieldset>
                     <legend><strong>Datos de Contacto</strong></legend><br>
@@ -73,9 +122,13 @@
                         placeholder="Ingrese aquí su email..."><br><br>
                 </fieldset>
             </form>
-        </div>
-
-        <div class="main3">
+            <p>
+                <input type="radio" name="genero" value="hombre">Hombre
+                <input type="radio" name="genero" value="Mujer">Mujer
+                <input type="radio" name="genero" value="Otro"> Otro
+            </p>
+            </fieldset>
+            </form>
             <form action="\datos\datos_login.html" target="_blank">
                 <fieldset>
                     <legend><strong>Datos Login</strong></legend><br>
@@ -90,6 +143,7 @@
             <button class="resetstyle" type="reset">Reset</button>
         </div>
 
+
         <div class="foot">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -100,6 +154,11 @@
             <h3>Derechos Reservados</h3>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
