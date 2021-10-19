@@ -11,6 +11,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9e519e617.js" crossorigin="anonymous"></script>
+    <script language="javascript">
+        var limpiaValue = (v) => {
+            document.querySelector(v).value = "";
+        }
+        function validacion() {
+            if (dni.value.length < 7 || dni.value.length > 8) {
+                // Si no se cumple la condicion...
+                alert('Ingrese un DNI válido');
+                limpiaValue("#dni");
+                return false;
+            } /*
+    else if (condicion que debe cumplir el segundo campo del formulario) {
+        // Si no se cumple la condicion...
+        alert('[ERROR] El campo debe tener un valor de...');
+        return false;
+    }
+    ...
+    else if (condicion que debe cumplir el último campo del formulario) {
+        // Si no se cumple la condicion...
+        alert('[ERROR] El campo debe tener un valor de...');
+        return false;
+    }*/
+
+            // Si el script ha llegado a este punto, todas las condiciones
+            // se han cumplido, por lo que se devuelve el valor true
+            return true;
+        }
+    </script>
     <title>Registro</title>
 </head>
 
@@ -57,7 +85,7 @@
         </nav>
 
         <div class="container mt-4">
-            <form class="was-validated" onsubmit="return validacion()">
+            <form class="was-validated" onsubmit="return validacion(this)">
                 <div class="row justify-content-md-center">
                     <div class="form-group col-md-6">
                         <label for="nombre">Nombre:</label>
@@ -131,7 +159,7 @@
                     </div>
                 </div>
                 <hr class="mb-3 mt-3">
-                <button type="submit" class="btn btn-primary" onclick="validacion()">Enviar</button>
+                <button type="submit" class="btn btn-primary" onclick="validacion(this)">Enviar</button>
             </form>
         </div>
 
