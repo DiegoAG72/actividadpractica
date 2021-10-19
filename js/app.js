@@ -3,18 +3,7 @@ var limpiaValue = (v) => {
     document.querySelector(v).value = "";
 }
 
-const input = document.querySelector('input');
-var nombre = document.querySelector("#nombre");
-var apellido = document.querySelector("#apellido");
-var domicilio = document.querySelector("#domicilio");
-var localidad = document.querySelector("#localidad");
-var dni = document.querySelector("#dni");
-var nacim = document.querySelector("#nacim");
-var telef = document.querySelector("#telef");
-var mail = document.querySelector("#mail");
-
-
- function validacion() {
+var validacion = () => {
     if (dni.value.length < 7 || dni.value.length > 8) {
         // Si no se cumple la condicion...
         alert('Ingrese un DNI válido');
@@ -36,3 +25,16 @@ var mail = document.querySelector("#mail");
     // se han cumplido, por lo que se devuelve el valor true
     return true;
 }
+
+const input = document.querySelector('input');
+var nombre = document.querySelector("#nombre");
+var apellido = document.querySelector("#apellido");
+var domicilio = document.querySelector("#domicilio");
+var localidad = document.querySelector("#localidad");
+var dni = document.querySelector("#dni");
+var nacim = document.querySelector("#nacim");
+var telef = document.querySelector("#telef");
+var mail = document.querySelector("#mail");
+
+
+ 
