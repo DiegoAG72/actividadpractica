@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9e519e617.js" crossorigin="anonymous"></script>
-    <script src="../js/app.js" async></script>
+    <script type="module" src="../js/app.js"></script>
     <title>Registro</title>
 </head>
 
@@ -136,202 +136,6 @@
             </form>
         </div>
 
-        <!--<div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Check this checkbox to continue.</div>
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-    <div class="container mt-4">
-        <form class="row g-3">
-            <div class="form-floating col-md-6" validate>
-                <input type="text" class="form-control" id="nombre" placeholder="nombre">
-                <label for="nombre">Ingrese su nombre...</label>
-            </div>
-            <div class="form-floating col-md-6">
-                <input type="text" class="form-control" id="apellido" placeholder="apellido">
-                <label for="apellido">Ingrese su apellido...</label>
-            </div>
-        </form>
-
-        <form class="row g-3 needs-validation" validate>
-            <div class="col-md-6 position-relative">
-                <label for="validationTooltip01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" value="" required>
-                <label for="nombre">Ingrese su nombre...</label>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-6 position-relative">
-                <label for="validationTooltip02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-6 position-relative">
-                <label for="validationTooltip02" class="form-label">Domicilio</label>
-                <input type="text" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-6 position-relative">
-                <label for="validationTooltip02" class="form-label">Localidad</label>
-                <input type="text" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-4 position-relative">
-                <label for="validationTooltip02" class="form-label">D.N.I.</label>
-                <input type="number" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-4 position-relative">
-                <label for="validationTooltip02" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" id="validationTooltip02" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-4 position-relative">
-                <label for="validationTooltip02" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="col-md-4 position-relative">
-                <label for="validationTooltip02" class="form-label">Email</label>
-                <input type="email" class="form-control" id="validationTooltip02" value="" required>
-                <div class="valid-tooltip">
-                    Ingreso ok!
-                </div>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-text bg-light">
-                    <input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input">Hombre
-                </div>
-                <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input">Mujer
-                </div>
-                <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input">Otro
-                </div>
-            </div>
-             <div class="col-md-4 position-relative">
-                        <label for="validationTooltipUsername" class="form-label">Username</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                            <input type="text" class="form-control" id="validationTooltipUsername"
-                                aria-describedby="validationTooltipUsernamePrepend" required>
-                            <div class="invalid-tooltip">
-                                Please choose a unique and valid username.
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-6 position-relative">
-                        <label for="validationTooltip03" class="form-label">City</label>
-                        <input type="text" class="form-control" id="validationTooltip03" required>
-                        <div class="invalid-tooltip">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div class="col-md-3 position-relative">
-                        <label for="validationTooltip04" class="form-label">State</label>
-                        <select class="form-select" id="validationTooltip04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
-                        </select>
-                        <div class="invalid-tooltip">
-                            Please select a valid state.
-                        </div>
-                    </div>
-                    <div class="col-md-3 position-relative">
-                        <label for="validationTooltip05" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="validationTooltip05" required>
-                        <div class="invalid-tooltip">
-                            Please provide a valid zip.
-                        </div>
-                    </div> 
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-        </form>
-    </div>
-    <div class="mb-3">
-        <form action="\datos\datos_pers.html" target="_blank">
-            <fieldset>
-                <legend><strong>Datos Personales</strong></legend>
-        </form>
-        <p><label for="nombre">Nombre: </label>
-            <input class="inputstyle" type="text" size="30" name="nombre" placeholder="Ingrese aquí su nombre...">
-        </p>
-        <p><label for="apellido">Apellido: </label>
-            <input class="inputstyle" type="text" size="40" name="apellido" placeholder="Ingrese aquí su apellido...">
-        </p>
-        <p><label for="domicio">Domicilio: </label>
-            <input class="inputstyle" type="text" size="50" name="domicilio" placeholder="Ingrese aquí su domicilio...">
-        </p>
-        <p><label for="localidad">Localidad: </label>
-            <input class="inputstyle" type="text" size="50" name="localidad" placeholder="Ingrese aquí su localidad...">
-        </p>
-        <p><label for="dni">D.N.I.: </label>
-            <input class="inputstyle" type="number" size="30" name="DNI" placeholder="Ingrese aquí su D.N.I...">
-        </p>
-        <p><label for="date">Fecha de nacimiento: </label>
-            <input class="inputstyle" type="date" name="nacim">
-        </p>
-    </div>
-    <form action="\datos\datos_contacto.html" target="_blank">
-        <fieldset>
-            <legend><strong>Datos de Contacto</strong></legend><br>
-            <label for="telef">Teléfono: </label>
-            <input class="inputstyle" type="tel" size="30" name="telef"
-                placeholder="Ingrese aquí su teléfono..."><br><br>
-            <label for="mail">Email: </label>
-            <input class="inputstyle" type="email" size="30" name="mail" placeholder="Ingrese aquí su email..."><br><br>
-        </fieldset>
-    </form>
-    <p>
-        <input type="radio" name="genero" value="hombre">Hombre
-        <input type="radio" name="genero" value="Mujer">Mujer
-        <input type="radio" name="genero" value="Otro"> Otro
-    </p>
-    </fieldset>
-    </form>
-    <form action="\datos\datos_login.html" target="_blank">
-        <fieldset>
-            <legend><strong>Datos Login</strong></legend><br>
-            <label for="user">Nombre de Usuario: </label>
-            <input class="inputstyle" type="text" size="30" name="user"
-                placeholder="Ingrese aquí su usuario..."><br><br>
-            <label for="pass">Contraseña: </label>
-            <input class="inputstyle" type="password" size="30" name="pass"><br><br>
-        </fieldset>
-    </form>
-    <input class="submitstyle" type="submit" value="Enviar">
-    <button class="resetstyle" type="reset">Reset</button>
-    </div>
-
 
     <div class="foot">
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -342,65 +146,65 @@
         <h3>@DAG2021</h3>
         <h3>Derechos Reservados</h3>
     </div>
-    -->
+    <!--
+    
     </div>
-    <!-- Footer -->
+    <!-
     <div class="container">
         <footer class="page-footer bg-dark">
-
-            <!-- Footer Elements -->
+        
+           
             <div class="container">
 
-                <!-- Grid row-->
+             
                 <div class="row">
 
-                    <!-- Grid column -->
                     <div class="col-md-12 py-5">
                         <div class="mb-5 flex-center">
 
-                            <!-- Facebook -->
+                  
                             <a class="fb-ic">
                                 <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
-                            <!-- Twitter -->
+                    
                             <a class="tw-ic">
                                 <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
-                            <!-- Google +-->
+                      
                             <a class="gplus-ic">
                                 <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
-                            <!--Linkedin -->
+                    
                             <a class="li-ic">
                                 <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
-                            <!--Instagram-->
+                         
                             <a class="ins-ic">
                                 <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
-                            <!--Pinterest-->
+                     
                             <a class="pin-ic">
                                 <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
                             </a>
                         </div>
                     </div>
-                    <!-- Grid column -->
+                
 
                 </div>
-                <!-- Grid row-->
+        
 
             </div>
-            <!-- Footer Elements -->
-
-            <!-- Copyright -->
+       
+          
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
                 <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
             </div>
-            <!-- Copyright -->
+         
 
         </footer>
-        <!-- Footer -->
+
     </div>
+--> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
