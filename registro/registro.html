@@ -11,40 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9e519e617.js" crossorigin="anonymous"></script>
-    <script language="javascript">
-        var limpiaValue = (v) => {
-            document.querySelector(v).value = "";
-        }
-        function validacion() {
-            if (dni.value.length < 7 || dni.value.length > 8) {
-                // Si no se cumple la condicion...
-                alert('Ingrese un DNI válido');
-                limpiaValue("#dni");
-                return false;
-            } /*
-    else if (condicion que debe cumplir el segundo campo del formulario) {
-        // Si no se cumple la condicion...
-        alert('[ERROR] El campo debe tener un valor de...');
-        return false;
-    }
-    ...
-    else if (condicion que debe cumplir el último campo del formulario) {
-        // Si no se cumple la condicion...
-        alert('[ERROR] El campo debe tener un valor de...');
-        return false;
-    }*/
-
-            // Si el script ha llegado a este punto, todas las condiciones
-            // se han cumplido, por lo que se devuelve el valor true
-            return true;
-        }
-    </script>
     <title>Registro</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron bg-dark text-center text-white p-4">
+        <div class="jumbotron bg-dark text-center text-white p-4 border border-danger">
             <h1 class="display-3">La Cocina de Amalita</h1>
             <hr class="my-auto">
             <h1 class="display-5">Registro</h1>
@@ -52,7 +24,7 @@
     </div>
 
     <div class="container bg-light">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-1">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-1 border border-danger">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -163,84 +135,28 @@
             </form>
         </div>
 
-
-        <div class="foot">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/es/" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            <h3>@DAG2021</h3>
-            <h3>Derechos Reservados</h3>
+        <div class="foot bg-dark text-center text-white p-4 mt-3 border border-danger">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"
+                    style="color: rgb(214, 55, 55); padding: 0.5rem;"></i></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"
+                    style="color: rgb(214, 55, 55); padding: 0.5rem;"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"
+                    style="color: rgb(214, 55, 55); padding: 0.5rem;"></i></a>
+            <a href="https://www.tiktok.com/es/" target="_blank"><i class="fab fa-tiktok"
+                    style="color: rgb(214, 55, 55); padding: 0.5rem;"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"
+                    style="color: rgb(214, 55, 55); padding: 0.5rem;"></i></a>
+            <h5>@DAG2021</h5>
+            <h4>Derechos Reservados</h4>
         </div>
-        <!--
-    
-    </div>
-    <!-
-    <div class="container">
-        <footer class="page-footer bg-dark">
-        
-           
-            <div class="container">
 
-             
-                <div class="row">
-
-                    <div class="col-md-12 py-5">
-                        <div class="mb-5 flex-center">
-
-                  
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                    
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                      
-                            <a class="gplus-ic">
-                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                    
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                         
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                     
-                            <a class="pin-ic">
-                                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                            </a>
-                        </div>
-                    </div>
-                
-
-                </div>
-        
-
-            </div>
-       
-          
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-         
-
-        </footer>
-
-    </div>
--->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
             </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script type="module" src="../js/app.js"></script>
+        <script src="../js/app.js"></script>
 </body>
-
-
 
 </html>
