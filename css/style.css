@@ -232,15 +232,43 @@ input   {
         text-align:center;
     }
 
-    @media only screen and (max-width: 660px) {
-        .main1, .main2, .head  {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: auto;
+    @media only screen and (max-width: 900px)   {
+        .grid   {
+            grid-template-columns: 30% auto;
+            grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+            grid-template-areas: "head head"
+                            "main1 main2"
+                            "main3 main3"
+                            "foot foot";
+            grid-gap: 0.1rem;
+        }
+        
+     
+    }
+
+
+
+    @media only screen and (max-width: 600px)   {
+        .grid   {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas: "head head"
+                             "main1 main2";  
         }
         .main3, .foot {
           display: none;
         }
+    }
 
+    @media only screen and (max-width: 450px)   {
+        .grid   {   
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: "head"
+                         "main1"
+                         "main2";
+        }     
+        .main3, .foot {
+          display: none;
+        }
     }
