@@ -93,7 +93,6 @@ iframe   {
 }
 
 .submitstyle    {
-    width: 16%;
     border-radius: .5rem;
     border-color: rgb(201, 198, 198);
     border-width: 0.2rem;
@@ -114,7 +113,6 @@ iframe   {
 }
 
 .resetstyle    {
-    width: 16%;
     border-color: rgb(201, 198, 198);
     border-width: 0.2rem;
     font-size: 1rem;
