@@ -96,7 +96,7 @@ iframe   {
     border-radius: .5rem;
     border-color: rgb(201, 198, 198);
     border-width: 0.2rem;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     background-color: rgba(163, 160, 160, 0.5);
     color:rgb(9, 70, 9);
     border-style: solid;
@@ -115,7 +115,7 @@ iframe   {
 .resetstyle    {
     border-color: rgb(201, 198, 198);
     border-width: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: rgb(163, 160, 160, 0.5);
     color:rgb(107, 9, 9);
     border-style: solid ;
@@ -159,7 +159,12 @@ body > div.grid > div.main2 > div.mb-3  {
     --animate-duration: 3s;
 }
 
+label   {
+    font-size: 1.25rem;
+}
+
 input   {
+    font-size: 1rem;
     border-radius: .5rem;
     box-sizing: border-box ;
     background-color: rgb(221, 221, 221);
