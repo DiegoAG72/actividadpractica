@@ -96,14 +96,6 @@ body > div > div.foot > i, body > div > div.foot > a, body > div > div.foot > a 
     top: 2%;
 }
 
-body > div > div.main3 > img    {
-  /*  padding-top: 5rem;
-    width: 25rem;*/
-    height: 400px;
-    width: 400px;
-    margin-top: 2.5rem;
-}
-
 iframe   {
     border: 0.1rem solid #911212;
 }
